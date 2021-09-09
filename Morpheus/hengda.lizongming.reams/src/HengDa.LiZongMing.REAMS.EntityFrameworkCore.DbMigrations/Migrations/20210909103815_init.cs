@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace HengDa.LiZongMing.REAMS.Migrations
 {
-    public partial class initdb0603 : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -825,7 +825,8 @@ namespace HengDa.LiZongMing.REAMS.Migrations
                     DeviceId = table.Column<long>(type: "bigint", nullable: false),
                     DoseRate = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
                     xml = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", maxLength: 8000, nullable: true),
-                    TenantId = table.Column<Guid>(type: "char(36)", nullable: true)
+                    TenantId = table.Column<Guid>(type: "char(36)", nullable: true),
+                    xml2 = table.Column<bool>(type: "tinyint(1)", nullable: false)
                 },
                 constraints: table =>
                 {

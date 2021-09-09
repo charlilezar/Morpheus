@@ -60,17 +60,17 @@ namespace HengDa.LiZongMing.REAMS.DataSave
                     services.AddSingleton<CtrlServices.CtrlHVEService>();
                     services.AddSingleton<CtrlServices.HDZCQDataService>();
                     services.AddSingleton<CtrlServices.HVEDataService>();
-                    services.AddSingleton<CtrlServices.CtrlHDNaISService>();
-                    services.AddSingleton<CtrlServices.HDNaISDataService>();
+                   // services.AddSingleton<CtrlServices.CtrlHDNaISService>();
+                   // services.AddSingleton<CtrlServices.HDNaISDataService>();
                     services.AddTransient<ZcqRunStatus>();
                     services.AddTransient<ZcqRunStatusDto>();
                     services.AddTransient<Wpf.Dto.SSRealDataDto>();
                     services.AddTransient<DeviceDto>();
-                    services.AddTransient<NaI.Dtos.NaiRecordDto>();
+                   // services.AddTransient<NaI.Dtos.NaiRecordDto>();
                     services.AddTransient<RoomRunStatusDto>();
                     services.AddTransient<Aming.DTU.Config.UniMessageBase>();
                     services.AddSingleton<CtrlServices.CtrlForwardMqttServer>();
-                    //services.AddSingleton<EchoServer>(op=>new EchoServer("0.0.0.0",51001));
+                    services.AddSingleton<EchoServer>(op=>new EchoServer("0.0.0.0",51001));
                  
 
 

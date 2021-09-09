@@ -10,8 +10,8 @@ using Volo.Abp.EntityFrameworkCore;
 namespace HengDa.LiZongMing.REAMS.Migrations
 {
     [DbContext(typeof(REAMSMigrationsDbContext))]
-    [Migration("20210603015446_initdb0603")]
-    partial class initdb0603
+    [Migration("20210909103815_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,7 +19,7 @@ namespace HengDa.LiZongMing.REAMS.Migrations
             modelBuilder
                 .HasAnnotation("_Abp_DatabaseProvider", EfCoreDatabaseProvider.MySql)
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
-                .HasAnnotation("ProductVersion", "5.0.6");
+                .HasAnnotation("ProductVersion", "5.0.9");
 
             modelBuilder.Entity("HengDa.LiZongMing.REAMS.Atm.AtmosphereRecord", b =>
                 {
@@ -1112,6 +1112,9 @@ namespace HengDa.LiZongMing.REAMS.Migrations
                     b.Property<string>("xml")
                         .HasMaxLength(8000)
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<bool>("xml2")
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
 

@@ -17,7 +17,7 @@ namespace HengDa.LiZongMing.REAMS.Migrations
             modelBuilder
                 .HasAnnotation("_Abp_DatabaseProvider", EfCoreDatabaseProvider.MySql)
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
-                .HasAnnotation("ProductVersion", "5.0.7");
+                .HasAnnotation("ProductVersion", "5.0.9");
 
             modelBuilder.Entity("HengDa.LiZongMing.REAMS.Atm.AtmosphereRecord", b =>
                 {
@@ -1111,9 +1111,8 @@ namespace HengDa.LiZongMing.REAMS.Migrations
                         .HasMaxLength(8000)
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<string>("xml2")
-                        .HasMaxLength(8000)
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                    b.Property<bool>("xml2")
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
 

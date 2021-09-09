@@ -14,7 +14,7 @@
   "GeoLocation_Altitude": 0.0000000000000000000000000000,
   "TestAddress": "在测地址",
   "HWConnectionJson": "{\"Id\":\"ForwardMqttServer\",\"Charset\":\"gbk\",\"EndPointType\":6,\"MqttType\":\"TCP\",\"ServerIP\":\"192.168.1.190\",\"ServerPort\":1883,\"ServerUrl\":\"ws://127.0.0.1:8083/mqtt\",\"ClientId\":\"Client_316304\",\"UserName\":\"88888888\",\"Password\":\"88888888\",\"SubTopic\":\"/mingdtu/dtu/mqttfowrdev/1234567/hex/up\",\"PubTopicUp\":\"/mingdtu/dtu/mqttfowrdev/1234567999/hex/up\",\"PubTopicDown\":\"/mingdtu/dtu/mqttfowrdev/1234567999/hex/down\",\"WillTopic\":\"DTU/{UserName}/offline\",\"EnableForward\":false,\"ForwardToId\":\"999999\"}",
-  "IsEnable": false,
+  "IsEnable": true,
   "Remark": null,
   "LastTimeOnline": "0001-01-01T00:00:00",
   "LastTimeOffline": "0001-01-01T00:00:00",

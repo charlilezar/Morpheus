@@ -14,7 +14,7 @@
   "GeoLocation_Altitude": 0.0000000000000000000000000000,
   "TestAddress": "在测地址", 
   "HWConnectionJson": "{\"Id\":\" TCP634301\",\"Charset\":\"gbk\",\"EndPointType\":3,\"ServerIP\":\"172.16.1.52\",\"ServerPort\":6050,\"ServerUrl\":\"ws://127.0.0.1:8083/mqtt\",\"ClientId\":\"Client_316305\",\"UserName\":\"88888888\",\"Password\":\"88888888\",\"SubTopic\":\"/mingdtu/dtu/ns/3c6105156c3c9/hex/up\",\"PubTopicUp\":\"/mingdtu/dtu/ns/3c6105156c3c9/hex/up\",\"PubTopicDown\":\"/mingdtu/dtu/3c6105156c3c9/hex/down\",\"WillTopic\":\"DTU/{UserName}/offline\",\"EnableForward\":true,\"ForwardToId\":\"999999\",\"ForwardToTopic\":\"/mingdtu/dtu/ns/1234567/hex/up\",\"ForwardFromTopic\":\"/mingdtu/dtu/ns/1234567/hex/down\"}",
-  "IsEnable": false,
+  "IsEnable": true,
   "Remark": null,
   "LastTimeOnline": "0001-01-01T00:00:00",
   "LastTimeOffline": "0001-01-01T00:00:00",
