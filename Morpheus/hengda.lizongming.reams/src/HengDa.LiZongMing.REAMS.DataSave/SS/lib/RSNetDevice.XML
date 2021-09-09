@@ -1,0 +1,741 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RSNetDevice</name>
+    </assembly>
+    <members>
+        <member name="M:RSNetDevice.Command.Command.Telecontrol(System.Object)">
+            <summary>
+            遥控命令
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Command.Command.CallParamList(System.Object)">
+            <summary>
+            召唤字典列表
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Command.Command.CallParam(System.Object)">
+            <summary>
+            召唤参数 
+            </summary>
+            <param name="args">
+            args.DeviceID   设备地址
+            args.DictIDs     字典编号集合（ushort类型）
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Command.Command.Trans(System.Object)">
+            <summary>
+            透传
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Common.BinarySerializeOpt`1.Deserialize(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="xmlFile">文件名</param>
+            <returns>返回类</returns>
+        </member>
+        <member name="M:RSNetDevice.Common.BinarySerializeOpt`1.Serialize(`0,System.String)">
+            <summary>
+            序列化类
+            </summary>
+            <param name="config">被序列化的类</param>
+            <param name="fileName">保存的文件</param>
+            <returns>成功返回true,失败返回false</returns>
+        </member>
+        <member name="M:RSNetDevice.Common.BinarySerializeOpt`1.Deserialize(System.Byte[])">
+            <summary>
+            反序列化
+            </summary>
+            <param name="xmlFile">文件名</param>
+            <returns>返回类</returns>
+        </member>
+        <member name="M:RSNetDevice.Common.BinarySerializeOpt`1.Serialize(`0)">
+            <summary>
+            序列化类
+            </summary>
+            <param name="config">被序列化的类</param>
+            <param name="fileName">保存的文件</param>
+            <returns>成功返回true,失败返回false</returns>
+        </member>
+        <member name="M:RSNetDevice.Common.Common.CheckSum(System.Byte[],System.UInt16)">
+            <summary>
+            获取校验和
+            </summary>
+            <param name="pInput"></param>
+            <param name="wSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Common.Common.ToHexStr(System.Byte[])">
+            <summary>
+            转16进制字符串
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Common.Common.ToHexStr(System.Byte[],System.Boolean)">
+            <summary>
+            转16进制字符串
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Common.Common.ToHexByte(System.String)">
+            <summary>
+            16进制字符串转byte[]
+            </summary>
+            <param name="hexString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Common.Common.ToIntAddress(System.Byte[],System.Int32)">
+            <summary>
+            byte[]设备编号转int
+            </summary>
+            <param name="address">设备编号</param>
+            <param name="decrease">减量 默认0x33</param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.Common.Common.ToByteAddress(System.Int32,System.Int32)">
+            <summary>
+            int设备编号转byte[]
+            </summary>
+            <param name="address">设备编号</param>
+            <param name="increase">增量 默认0x33</param>
+            <returns></returns>
+        </member>
+        <member name="P:RSNetDevice.Data.HeartbeatData.DeviceID">
+            <summary>
+            终端编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.ParamData.DeviceID">
+            <summary>
+            终端编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.ParamData.ParameterList">
+            <summary>
+            获取参数集合
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.ParamIdsData.DeviceID">
+            <summary>
+            获取终端编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.ParamIdsData.TotalCount">
+            <summary>
+            获取本设备所有参数的总数
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.ParamIdsData.Count">
+            <summary>
+            获取本帧参数数量
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.ParamIdsData.PararmIdList">
+            <summary>
+            获取参数编号集合
+            </summary>
+        </member>
+        <member name="T:RSNetDevice.Data.RealTimeData">
+            <summary>
+            实时数据
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.RealTimeData.DeviceID">
+            <summary>
+            网络设备编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.RealTimeData.NodeList">
+            <summary>
+            节点数据
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.RealTimeData.CoordinateType">
+             <summary>
+            03：代表为上送的为GPS经纬度float型数据
+            01：代表基站为中国联通
+            02：代表基站为中国移动
+            00：百度经纬度 float
+            若01：则代表MNC为01
+            若02：则代表MNC为00
+             </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.RealTimeData.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.RealTimeData.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.RealTimeData.RelayStatus">
+            <summary>
+            继电器状态 二进制字符串。例如01000000 表示第二位继电器闭合，其余断开
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.LoginData.DeviceID">
+            <summary>
+            终端编号
+            </summary>
+        </member>
+        <member name="T:RSNetDevice.Data.StoreData">
+            <summary>
+            存储数据
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.StoreData.DeviceID">
+            <summary>
+            网络设备编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.StoreData.NodeList">
+            <summary>
+            节点数据
+            </summary>
+        </member>
+        <member name="T:RSNetDevice.Data.TelecontrolAck">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TelecontrolAck.DeviceID">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TelecontrolAck.ExecStatus">
+            <summary>
+            执行情况 1：执行成功；2：执行失败；其余情况为错误
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TelecontrolAck.RelayID">
+            <summary>
+            遥控序号	编码号从0~15
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TimmingAck.DeviceID">
+            <summary>
+            设备编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TimmingAck.ExecStatus">
+            <summary>
+            校时结果	1代表校时成功，其他代表校时失败
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TransDataAck.DeviceID">
+            <summary>
+            设备地址
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TransDataAck.TransDataLen">
+            <summary>
+            透传字节数
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.TransDataAck.Data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Data.WriteParamAck._res">
+            <summary>
+            应答结果 true,01：成功;false, 00：失败
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Data.WriteParamAck._Count">
+            <summary>
+            本帧写入的参数数量
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Data.WriteParamAck._Pararms">
+            <summary>
+            参数列表
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.WriteParamAck.DeviceID">
+            <summary>
+            获取终端编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.WriteParamAck.Res">
+            <summary>
+            获取应答结果 true:成功；false:失败
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.WriteParamAck.Count">
+            <summary>
+            获取写入成功的参数数量
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Data.WriteParamAck.Pararms">
+            <summary>
+            获取参数列表
+            </summary>
+        </member>
+        <member name="T:RSNetDevice.Model.NodeData">
+            <summary>
+            节点数据
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.NodeID">
+            <summary>
+            节点编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.Tem">
+            <summary>
+            温度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.Hum">
+            <summary>
+            湿度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.RecordTime">
+            <summary>
+            如果为存储数据则为存储时间，实时数据无效
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.CoordinateType">
+             <summary>
+            03：代表为上送的为GPS经纬度float型数据
+            01：代表基站为中国联通
+            02：代表基站为中国移动
+            00：百度经纬度 float
+            若01：则代表MNC为01
+            若02：则代表MNC为00
+             </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.Lng">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.Lat">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.SignedInt32Value">
+            <summary>
+            32位有符号整形数据
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.UnSignedInt32Value">
+            <summary>
+            32位无符号整形数据
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.NodeData.FloatValue">
+            <summary>
+            浮点型数据
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.INT8U">
+            <summary>
+            unsigned char   
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.INT8S">
+            <summary>
+            signed char 
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.INT16U">
+            <summary>
+            unsigned short  
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.INT16S">
+            <summary>
+            signed short
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.INT32U">
+            <summary>
+            unsigned long 
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.INT32S">
+            <summary>
+            signed long
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.FLOAT">
+            <summary>
+            float
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.CHAR">
+            <summary>
+            char
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.STRING">
+            <summary>
+            string
+            </summary>
+        </member>
+        <member name="F:RSNetDevice.Model.ParamTypes.IP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RSNetDevice.Model.ParamItem">
+            <summary>
+            参数实体
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.ParamItem.ParamId">
+            <summary>
+            获取或设置参数编号
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.ParamItem.ParamType">
+            <summary>
+            获取参数类型
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.ParamItem.Description">
+            <summary>
+            获取参数说明
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.ParamItem.Value">
+            <summary>
+            获取或设置参数值
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.ParamItem.Length">
+            <summary>
+            获取参数值字节长度
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.Model.ParamItem.ValueDescription">
+            <summary>
+            获取参数值描述字典
+            </summary>
+        </member>
+        <member name="M:RSNetDevice.Model.ParamItem.New(System.Int32,System.String)">
+            <summary>
+            实例化设备参数用于下发。如果参数值验证失败，则抛出响应的异常信息
+            </summary>
+            <param name="paramId">参数编号</param>
+            <param name="value">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="T:RSNetDevice.RSServer">
+            <summary>
+            监听服务类
+            </summary>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveLoginDataHandler">
+            <summary>
+            接收到登录数据时的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveRealtimeDataHandler">
+            <summary>
+            接收到实时数据时的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data">实时数据类</param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveStoreDataHandler">
+            <summary>
+            接收到存储数据的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data">存储数据类</param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnTelecontrolAckHandler">
+            <summary>
+            接收到遥控应答指令的委托
+            </summary>
+            <param name="server"></param>
+            <param name="ack">遥控应答类</param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnTimmingAckHandler">
+            <summary>
+            接收到校时指令的委托
+            </summary>
+            <param name="server"></param>
+            <param name="ack">校时应答类</param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveParamIdsHandler">
+            <summary>
+            接收到参数编号列表的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveParamHandler">
+            <summary>
+            接收到设备参数的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveWriteParamAckHandler">
+            <summary>
+            接收到下载设备参数响应数据的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data"></param>
+        </member>
+        <member name="T:RSNetDevice.RSServer.OnReceiveTransDataAckHandler">
+            <summary>
+            接收到透传操作响应的委托
+            </summary>
+            <param name="server"></param>
+            <param name="data"></param>
+        </member>
+        <member name="F:RSNetDevice.RSServer._SocketManager">
+            <summary>
+            监听服务类
+            </summary>
+        </member>
+        <member name="P:RSNetDevice.RSServer.DeviceTimeout">
+            <summary>
+            设备超时。单位秒。如果超过这个时间没有接受到设备数据，则判断该设备离线
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveLoginData">
+            <summary>
+            当设备登录时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveRealtimeData">
+            <summary>
+            获取到设备主动上传数据时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveStoreData">
+            <summary>
+            获取到已存储数据时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnTelecontrolAck">
+            <summary>
+            终端响应遥控命令时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnTimmingAck">
+            <summary>
+            终端响应校时命令时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveParamIds">
+             <summary>
+            设备上传参数编号列表时触发此事件
+             </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveParam">
+            <summary>
+            设备上传参数时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveWriteParamAck">
+            <summary>
+            终端响应下载参数命令时触发此事件
+            </summary>
+        </member>
+        <member name="E:RSNetDevice.RSServer.OnReceiveTransDataAck">
+            <summary>
+            终端响应透传指令时触发此事件
+            </summary>
+        </member>
+        <member name="M:RSNetDevice.RSServer.Initiate(System.String,System.Int32,System.Boolean)">
+            <summary>
+            实例化
+            </summary>
+            <param name="ipAddress">本机IP地址。如果为空则绑定本机所有网卡的IP</param>
+            <param name="port">端口</param>
+            <param name="judgeTimeout">是否判断设备超时</param>
+            <returns></returns>       
+        </member>
+        <member name="M:RSNetDevice.RSServer.Start">
+            <summary>
+            启动监听服务
+            </summary>
+            <returns>True:启动成功 False:启动失败</returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.Stop">
+            <summary>
+            停止监听服务
+            </summary>
+            <returns>True:停止成功 False:停止失败</returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.Telecontrol(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            发送遥控指令
+            </summary>
+            <param name="deviceID">设备编号</param>
+            <param name="relayId">继电器编号 0~15</param>
+            <param name="opt">继电器执行类型	0：代表继电器闭合  1：代表继电器释放</param>
+            <param name="optTime">继电器执行时间 时间范围为0~255，单位为秒，若时间为0则一直吸合或释放</param>
+            <returns>true:发送成功；false:发送失败</returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.Timming(System.Int32)">
+            <summary>
+            发送校时指令
+            </summary>
+            <param name="deviceID">设备编号</param>
+            <returns>true:发送成功；false:发送失败</returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.CallStoreData(System.Int32)">
+            <summary>
+            召唤已存储数据
+            </summary>
+            <param name="deviceID">设备编号</param>
+            <returns>true:发送成功；false:发送失败</returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.CallParamList(System.Int32)">
+            <summary>
+            召唤参数编号列表
+            </summary>
+            <param name="deviceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.CallParam(System.Int32,System.Int32)">
+            <summary>
+            读取设备参数
+            </summary>
+            <param name="deviceId">设备地址</param>
+            <param name="paramId">参数编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.CallParam(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            读取设备参数
+            </summary>
+            <param name="deviceId">设备地址</param>
+            <param name="paramIds">参数编号集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.WriteParam(System.Int32,System.Collections.Generic.List{RSNetDevice.Model.ParamItem})">
+            <summary>
+            下载参数
+            </summary>
+            <param name="deviceId">设备地址</param>
+            <param name="parameters">设备参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.Trans(System.Int32,System.String)">
+            <summary>
+            数据透传
+            </summary>
+            <param name="deviceId">设备地址</param>
+            <param name="hexData">16进制数据字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:RSNetDevice.RSServer.CloseClient(System.Int32)">
+            <summary>
+            断开客户端连接
+            </summary>
+            <param name="deviceID">设备编号</param>
+            <returns>true:断开成功；false:断开失败</returns>
+        </member>
+        <member name="P:RSNetDevice.Tcp.AsyncUserToken.IPAddress">
+            <summary>  
+            客户端IP地址  
+            </summary>  
+        </member>
+        <member name="P:RSNetDevice.Tcp.AsyncUserToken.Remote">
+            <summary>  
+            远程地址  
+            </summary>  
+        </member>
+        <member name="P:RSNetDevice.Tcp.AsyncUserToken.Socket">
+            <summary>  
+            通信SOKET  
+            </summary>  
+        </member>
+        <member name="P:RSNetDevice.Tcp.AsyncUserToken.ConnectTime">
+            <summary>  
+            连接时间  
+            </summary>  
+        </member>
+        <member name="P:RSNetDevice.Tcp.AsyncUserToken.Buffer">
+            <summary>  
+            数据缓存区  
+            </summary>  
+        </member>
+        <member name="T:RSNetDevice.Tcp.SocketManager.OnClientNumberChange">
+            <summary>  
+            客户端连接数量变化时触发  
+            </summary>  
+            <param name="num">当前增加客户的个数(用户退出时为负数,增加时为正数,一般为1)</param>  
+            <param name="token">增加用户的信息</param>  
+        </member>
+        <member name="T:RSNetDevice.Tcp.SocketManager.OnReceiveHandler">
+            <summary>  
+            接收到客户端的数据  
+            </summary>  
+            <param name="token">客户端</param>  
+            <param name="data">客户端数据</param>  
+        </member>
+        <member name="E:RSNetDevice.Tcp.SocketManager.ClientNumberChange">
+            <summary>  
+            客户端连接数量变化事件  
+            </summary>  
+        </member>
+        <member name="E:RSNetDevice.Tcp.SocketManager.OnReceive">
+            <summary>  
+            接收到客户端的数据事件  
+            </summary>  
+        </member>
+        <member name="P:RSNetDevice.Tcp.SocketManager.ClientList">
+            <summary>  
+            获取客户端列表  
+            </summary>  
+        </member>
+        <member name="M:RSNetDevice.Tcp.SocketManager.#ctor(System.Int32,System.Int32)">
+            <summary>  
+            构造函数  
+            </summary>  
+            <param name="numConnections">最大连接数</param>  
+            <param name="receiveBufferSize">缓存区大小</param>  
+        </member>
+        <member name="M:RSNetDevice.Tcp.SocketManager.Init">
+            <summary>  
+            初始化  
+            </summary>  
+        </member>
+        <member name="M:RSNetDevice.Tcp.SocketManager.Start(System.String,System.Int32)">
+            <summary>  
+            启动服务  
+            </summary>  
+            <param name="localEndPoint"></param>  
+        </member>
+        <member name="M:RSNetDevice.Tcp.SocketManager.Stop">
+            <summary>  
+            停止服务  
+            </summary>  
+        </member>
+        <member name="M:RSNetDevice.Tcp.SocketManager.Send(RSNetDevice.Tcp.AsyncUserToken,System.Byte[])">
+            <summary>  
+            对数据进行打包,然后再发送  
+            </summary>  
+            <param name="token"></param>  
+            <param name="data"></param>  
+            <returns></returns>  
+        </member>
+    </members>
+</doc>

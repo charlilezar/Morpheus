@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HengDa.LiZongMing.REAMS.Domain.Shared</name>
+    </assembly>
+    <members>
+        <member name="P:HengDa.LiZongMing.REAMS.Iot.QingdianLog.gongkuang">
+            <summary>
+            工况
+            </summary>
+        </member>
+    </members>
+</doc>

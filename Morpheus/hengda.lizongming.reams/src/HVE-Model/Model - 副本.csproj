@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18D92961-305B-47BB-BA4F-78E048E86B24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\青海省辐射环境自动监测站建设项目\doc\厂家工具\RSDetectionConfigurationUtility\CommonLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4">
+      <HintPath>..\..\青海省辐射环境自动监测站建设项目\doc\厂家工具\RSDetectionConfigurationUtility\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.9\lib\net40-client\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcquisitionRangeState.cs" />
+    <None Include="李宗明的记录.md" />
+    <Compile Include="Commands\BatteryMeasurementResponse.cs" />
+    <Compile Include="Commands\ClearDebugLog.cs" />
+    <Compile Include="Commands\ClearPerformanceHistogram.cs" />
+    <Compile Include="Commands\CloseConnection.cs" />
+    <Compile Include="Commands\CommandStatusResponse.cs" />
+    <Compile Include="Commands\CopyDatabaseFile.cs" />
+    <Compile Include="Commands\DeleteDatabaseRecords.cs" />
+    <Compile Include="Commands\Discovery.cs" />
+    <Compile Include="Commands\DiscoveryResponse.cs" />
+    <Compile Include="Commands\EchoRequest.cs" />
+    <Compile Include="Commands\ElectrometerAcquisitionEnable.cs" />
+    <Compile Include="Commands\EventResponse.cs" />
+    <Compile Include="Commands\GetAllConfigurations.cs" />
+    <Compile Include="Commands\GetAllConfigurationsResponse.cs" />
+    <Compile Include="Commands\GetAllEvents.cs" />
+    <Compile Include="Commands\GetAllEventsResponse.cs" />
+    <Compile Include="Commands\GetAllScalarMeasurements.cs" />
+    <Compile Include="Commands\GetAllScalarMeasurementsResponse.cs" />
+    <Compile Include="Commands\GetConfiguration.cs" />
+    <Compile Include="Commands\GetConfigurationResponse.cs" />
+    <Compile Include="Commands\GetDatabaseMeasurementSummary.cs" />
+    <Compile Include="Commands\GetDatabaseSummary.cs" />
+    <Compile Include="Commands\GetDatabaseSummaryResponse.cs" />
+    <Compile Include="Commands\GetElectrometerConfiguration.cs" />
+    <Compile Include="Commands\GetElectrometerConfigurationResponse.cs" />
+    <Compile Include="Commands\GetElectrometerId.cs" />
+    <Compile Include="Commands\GetElectrometerIdResponse.cs" />
+    <Compile Include="Commands\GetEvent.cs" />
+    <Compile Include="Commands\GetHpicConfiguration.cs" />
+    <Compile Include="Commands\GetHpicConfigurationHistory.cs" />
+    <Compile Include="Commands\GetHpicConfigurationHistoryResponse.cs" />
+    <Compile Include="Commands\GetHpicConfigurationResponse.cs" />
+    <Compile Include="Commands\GetPerformanceMeasurement.cs" />
+    <Compile Include="Commands\GetScalarMeasurement.cs" />
+    <Compile Include="Commands\GetTime.cs" />
+    <Compile Include="Commands\GetTimeResponse.cs" />
+    <Compile Include="Commands\GetUnitId.cs" />
+    <Compile Include="Commands\GetUnitIdResponse.cs" />
+    <Compile Include="Commands\InitiateFirmwareUpdate.cs" />
+    <Compile Include="Commands\LogTestMeasurements.cs" />
+    <Compile Include="Commands\LoopbackOutput.cs" />
+    <Compile Include="Commands\NotifyEnable.cs" />
+    <Compile Include="Commands\PerformanceMeasurementResponse.cs" />
+    <Compile Include="Commands\RestartUnit.cs" />
+    <Compile Include="Commands\ScalarMeasurementResponse.cs" />
+    <Compile Include="Commands\SetChargerParameters.cs" />
+    <Compile Include="Commands\SetConfiguration.cs" />
+    <Compile Include="Commands\SetElectrometerConfiguration.cs" />
+    <Compile Include="Commands\SetElectrometerConfigurationToDefault.cs" />
+    <Compile Include="Commands\SetElectrometerId.cs" />
+    <Compile Include="Commands\SetHighVoltageControl.cs" />
+    <Compile Include="Commands\SetHpicConfiguration.cs" />
+    <Compile Include="Commands\SetState.cs" />
+    <Compile Include="Commands\SetTime.cs" />
+    <Compile Include="Commands\SetUnitId.cs" />
+    <Compile Include="Commands\SqlDatabaseClean.cs" />
+    <Compile Include="Commands\SqlDatabaseCompact.cs" />
+    <Compile Include="Commands\SqlEventQuery.cs" />
+    <Compile Include="Commands\SqlEventQueryResponse.cs" />
+    <Compile Include="Commands\SqlMeasurementQuery.cs" />
+    <Compile Include="Commands\SqlMeasurementQueryResponse.cs" />
+    <Compile Include="Commands\SqlQuery.cs" />
+    <Compile Include="Commands\SqlQueryResponse.cs" />
+    <Compile Include="Commands\TestRequest.cs" />
+    <Compile Include="Commands\TestResponse.cs" />
+    <Compile Include="Commands\UnitInfo.cs" />
+    <Compile Include="Commands\WaveformMeasurementResponse.cs" />
+    <Compile Include="Commands\WaveformTrigger.cs" />
+    <Compile Include="Commands\XmlCommand.cs" />
+    <Compile Include="Configurations\AlarmEventConfiguration.cs" />
+    <Compile Include="Configurations\AviliableCommPorts.cs" />
+    <Compile Include="Configurations\ComBaudRates.cs" />
+    <Compile Include="Configurations\CompositeMeasurementConfiguration.cs" />
+    <Compile Include="Configurations\Configuration.cs" />
+    <Compile Include="Configurations\ConfigurationDefinition.cs" />
+    <Compile Include="Configurations\DoseRateMeasurementConfiguration.cs" />
+    <Compile Include="Configurations\EnumTypeConverter.cs" />
+    <Compile Include="Configurations\EventConfiguration.cs" />
+    <Compile Include="Configurations\ExternalDisplayConfiguration.cs" />
+    <Compile Include="Configurations\FieldPropertyDescriptor.cs" />
+    <Compile Include="Configurations\FieldsToPropertiesTypeDescriptionProvider.cs" />
+    <Compile Include="Configurations\FieldsToPropertiesTypeDescriptor.cs" />
+    <Compile Include="Configurations\FormatType.cs" />
+    <Compile Include="Configurations\HighVoltageControlMethod.cs" />
+    <Compile Include="Configurations\MeasurementConfiguration.cs" />
+    <Compile Include="Configurations\MeasurementSource.cs" />
+    <Compile Include="Configurations\OperatingMode.cs" />
+    <Compile Include="Configurations\RSDetectionConfiguration.cs" />
+    <Compile Include="Configurations\RtsControl.cs" />
+    <Compile Include="Configurations\SavedConfiguration.cs" />
+    <Compile Include="Configurations\ScalarMeasurementConfiguration.cs" />
+    <Compile Include="Configurations\SerialPortConfiguration.cs" />
+    <Compile Include="Configurations\UnitCategory.cs" />
+    <Compile Include="Configurations\UnitDefinitions.cs" />
+    <Compile Include="Configurations\UnitType.cs" />
+    <Compile Include="Configurations\UnitTypeConverter.cs" />
+    <Compile Include="Configurations\WeatherStationConfiguration.cs" />
+    <Compile Include="Configurations\WeatherStations.cs" />
+    <Compile Include="DataService\DiscoveredConnection.cs" />
+    <Compile Include="DataService\DiscoveryService.cs" />
+    <Compile Include="DataService\EchoResponse.cs" />
+    <Compile Include="DataService\EventLogQueryResult.cs" />
+    <Compile Include="DataService\ScalarMeasurementPlotData.cs" />
+    <Compile Include="DataService\SentryDataService.cs" />
+    <Compile Include="DataService\TestNames.cs" />
+    <Compile Include="DataService\UdpDiscoveryClient.cs" />
+    <Compile Include="ElectometerOutputGain.cs" />
+    <Compile Include="Electrometer\Breakpoint.cs" />
+    <Compile Include="Electrometer\ElectrometerConfiguration.cs" />
+    <Compile Include="Electrometer\ElectrometerState.cs" />
+    <Compile Include="Electrometer\HpicConfiguration.cs" />
+    <Compile Include="Electrometer\TemperatureSplineFit.cs" />
+    <Compile Include="Events\EventStates.cs" />
+    <Compile Include="Events\SentinelState.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="IsFactoryAttribute.cs" />
+    <Compile Include="Measurements\BatteryMeasurement.cs" />
+    <Compile Include="Measurements\ChargerStatus.cs" />
+    <Compile Include="Measurements\CompositeMeasurement.cs" />
+    <Compile Include="Measurements\ElectrometerWaveform.cs" />
+    <Compile Include="Measurements\GenericHistogram.cs" />
+    <Compile Include="Measurements\IntegrationState.cs" />
+    <Compile Include="Measurements\IntervalHistogram.cs" />
+    <Compile Include="Measurements\Measurement.cs" />
+    <Compile Include="Measurements\MeteorologicalData.cs" />
+    <Compile Include="Measurements\MeteorologyMeasurement.cs" />
+    <Compile Include="Measurements\PerformanceHistogram.cs" />
+    <Compile Include="Measurements\PerformanceMeasurement.cs" />
+    <Compile Include="Measurements\ScalarMeasurement.cs" />
+    <Compile Include="Measurements\SmartBatteryStatus.cs" />
+    <Compile Include="Measurements\WaveformMeasurement.cs" />
+    <Compile Include="MinToMaxMethod.cs" />
+    <Compile Include="MvvmMessages\mvvmBatteryMeasurement.cs" />
+    <Compile Include="MvvmMessages\mvvmCommandStatusResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmConnectionMessage.cs" />
+    <Compile Include="MvvmMessages\mvvmDatasetResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmDebugMessage.cs" />
+    <Compile Include="MvvmMessages\mvvmEventQueryResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetAllConfigurationsResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetAllEventsResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetAllScalarMeasurementsResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetConfigurationResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetDatabaseSummaryResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetElectrometerConfigurationResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetElectrometerIdResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetHpicConfigurationResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetTimeResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmGetUnitIdResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmMeasurementQueryResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmMessage.cs" />
+    <Compile Include="MvvmMessages\mvvmPerformanceMeasurementResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmScalarMeasurement.cs" />
+    <Compile Include="MvvmMessages\mvvmSentinelState.cs" />
+    <Compile Include="MvvmMessages\mvvmSentryMessage.cs" />
+    <Compile Include="MvvmMessages\mvvmTestResponse.cs" />
+    <Compile Include="MvvmMessages\mvvmUserControlSelected.cs" />
+    <Compile Include="MvvmMessages\mvvmWaveformMeasurement.cs" />
+    <Compile Include="Notifications\UdpNotifyInput.cs" />
+    <Compile Include="NotifyCriteria.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseProcessor\LegacyResponseProcessor.cs" />
+    <Compile Include="RtsControl.cs" />
+    <Compile Include="SentinelException.cs" />
+    <Compile Include="SentryDebug.cs" />
+    <Compile Include="SimulationMethod.cs" />
+    <Compile Include="WaveformTriggerMode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="app.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dto\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,102 @@
+[
+  {
+    "SNO": "0101A01",
+    "Enabled": true,
+    "Devices": [
+      {
+        "DeviceType": 4,
+        "ENO": "001000",
+        "SN": "HVE-1",
+        "ID": 95555555550004,
+        "SNO": "0101A01",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 6,
+        "ENO": "010000",
+        "SN": "NaIs-1",
+        "ID": 95555555550005,
+        "SNO": "0101A01",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 3,
+        "ENO": "003001",
+        "SN": "NBS-1",
+        "ID": 95555555550003,
+        "SNO": "0101A01",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 1,
+        "ENO": "004000",
+        "SN": "ZCQ-1",
+        "ID": 95555555550006,
+        "SNO": "0101A01",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 2,
+        "ENO": "005000",
+        "SN": "ZJC-1",
+        "ID": 95555555550007,
+        "SNO": "0101A01",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 7,
+        "ENO": "002000",
+        "SN": "Atmosphere-1",
+        "ID": 95555555550009,
+        "SNO": "0101A01",
+        "CTime": 30
+      }
+    ]
+  },
+  {
+    "SNO": "0101A02",
+    "Enabled": false,
+    "Devices": [
+      {
+        "DeviceType": 4,
+        "ENO": "001000",
+        "SN": "HVE-2",
+        "ID": 95555555550104,
+        "SNO": "0101A02",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 6,
+        "ENO": "010000",
+        "SN": "NaIs-2",
+        "ID": 95555555550105,
+        "SNO": "0101A02",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 3,
+        "ENO": "003001",
+        "SN": "NBS-2",
+        "ID": 95555555550103,
+        "SNO": "0101A02",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 1,
+        "ENO": "004000",
+        "SN": "ZCQ-2",
+        "ID": 95555555550106,
+        "SNO": "0101A02",
+        "CTime": 30
+      },
+      {
+        "DeviceType": 2,
+        "ENO": "005000",
+        "SN": "ZJC-2",
+        "ID": 95555555550107,
+        "SNO": "0101A02",
+        "CTime": 30
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+自制了两个DTU，
+
+SN：84cca85f9210
+下发主题：/mingdtu/dtu/84cca85f9210/hex/down
+上传主题：/mingdtu/dtu/84cca85f9210/hex/up
+接口：  RS485
+设备： 气碘
+ip: 动态，绑定到 192.168.0.55
+
+
+SN：3c6105156c3c
+下发主题：/mingdtu/dtu/3c6105156c3c/hex/down
+上传主题：/mingdtu/dtu/3c6105156c3c/hex/up
+接口：  RS232
+设备： 干湿沉降
+ip:动态，未绑定
+
+
+

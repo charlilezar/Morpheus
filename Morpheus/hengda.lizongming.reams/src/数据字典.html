@@ -1,0 +1,3927 @@
+﻿
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>降雨状态 【RnsRunStatus】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    降雨状态 【RnsRunStatus】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>Raining&nbsp;</td>
+    <td align='center'>下雨中&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>BeginTime&nbsp;</td>
+    <td align='center'>下雨开始时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>EndTime&nbsp;</td>
+    <td align='center'>下雨结束时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>TotalRainfall&nbsp;</td>
+    <td align='center'>累计降雨量&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>MinRainfall&nbsp;</td>
+    <td align='center'>每分钟降雨量&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>站房环境状态 【RoomRunStatus】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    站房环境状态 【RoomRunStatus】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>GeoLocation_Lng&nbsp;</td>
+    <td align='center'>地理位置-经度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>GeoLocation_Lat&nbsp;</td>
+    <td align='center'>地理位置-伟度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>GeoLocation_Altitude&nbsp;</td>
+    <td align='center'>地理位置-海拔高度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>NodeID&nbsp;</td>
+    <td align='center'>节点编号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Humidity&nbsp;</td>
+    <td align='center'>湿度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Relay1&nbsp;</td>
+    <td align='center'>继电器1&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>Relay2&nbsp;</td>
+    <td align='center'>继电器2&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>Relay3&nbsp;</td>
+    <td align='center'>继电器3&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Relay4&nbsp;</td>
+    <td align='center'>继电器4&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>Relay5&nbsp;</td>
+    <td align='center'>继电器5&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>Relay6&nbsp;</td>
+    <td align='center'>继电器6&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>Relay7&nbsp;</td>
+    <td align='center'>继电器7&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>Relay8&nbsp;</td>
+    <td align='center'>继电器8&nbsp;</td>
+    <td  align='center'>1&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值2&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值3&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值4&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值5&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值6&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值7&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>Value2&nbsp;</td>
+    <td align='center'>数值8&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>超大气溶胶运行状态 【NbsRunStatus】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    超大气溶胶运行状态 【NbsRunStatus】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>WorkMode&nbsp;</td>
+    <td align='center'>工作模式&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>WorkStatus&nbsp;</td>
+    <td align='center'>设备状态&nbsp;</td>
+    <td  align='center'>ushort&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>WorkStatusName&nbsp;</td>
+    <td align='center'>设备状态描述&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>StandardVolume&nbsp;</td>
+    <td align='center'>标况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>WorkingVolume&nbsp;</td>
+    <td align='center'>工况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>IsDoorOpened&nbsp;</td>
+    <td align='center'>舱门是否打开&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>LCDStatus&nbsp;</td>
+    <td align='center'>LCD连接状态&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>IsPressureAOverrun&nbsp;</td>
+    <td align='center'>大气A是否超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>IsPressureBOverrun&nbsp;</td>
+    <td align='center'>大气B是否超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>IsIodineOverrun&nbsp;</td>
+    <td align='center'>气碘是否超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>FS4003AError&nbsp;</td>
+    <td align='center'>A电子流量计FS4003故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>FS4003BError&nbsp;</td>
+    <td align='center'>B电子流量计FS4003故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>DpSensorError&nbsp;</td>
+    <td align='center'>差压传感器故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>AtmosphereModuleError&nbsp;</td>
+    <td align='center'>大气压模块故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>TemModuleError&nbsp;</td>
+    <td align='center'>温度模块故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>SettingFlow&nbsp;</td>
+    <td align='center'>瞬时采样流量设定值&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>SettingHour&nbsp;</td>
+    <td align='center'>已设定的采样时间的小时部分值&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>SettingMin&nbsp;</td>
+    <td align='center'>已设定的采样时间的分钟部分值&nbsp;</td>
+    <td  align='center'>short&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>SettingTotalFlow&nbsp;</td>
+    <td align='center'>已设定的采样体积值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>TaskStartTime&nbsp;</td>
+    <td align='center'>任务启动时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>BoxTemperature&nbsp;</td>
+    <td align='center'>箱体温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>环境温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>InitTemperature&nbsp;</td>
+    <td align='center'>计前温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>25&nbsp;</td>
+    <td  align='center'>RemainWorkTimes&nbsp;</td>
+    <td align='center'>剩余时间&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>26&nbsp;</td>
+    <td  align='center'>RemainV&nbsp;</td>
+    <td align='center'>剩余体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>27&nbsp;</td>
+    <td  align='center'>AlarmCode&nbsp;</td>
+    <td align='center'>故障代码&nbsp;</td>
+    <td  align='center'>short&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>28&nbsp;</td>
+    <td  align='center'>AlarmDesc&nbsp;</td>
+    <td align='center'>故障名称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>29&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>30&nbsp;</td>
+    <td  align='center'>RunUpdateTime&nbsp;</td>
+    <td align='center'>状态更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>31&nbsp;</td>
+    <td  align='center'>AlarmUpdateTime&nbsp;</td>
+    <td align='center'>警报更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>32&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>超大气溶胶采样记录 【NbsRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    超大气溶胶采样记录 【NbsRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>FileNo&nbsp;</td>
+    <td align='center'>文件号&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>BatchNumber&nbsp;</td>
+    <td align='center'>滤膜批号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>StartTime&nbsp;</td>
+    <td align='center'>开始时间&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>EndTime&nbsp;</td>
+    <td align='center'>结束时间&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>InstantaneousFlow&nbsp;</td>
+    <td align='center'>瞬时流量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>StandardVolume&nbsp;</td>
+    <td align='center'>标况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>WorkingVolume&nbsp;</td>
+    <td align='center'>工况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>环境温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>Humidity&nbsp;</td>
+    <td align='center'>环境湿度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Atmosphere&nbsp;</td>
+    <td align='center'>大气压&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>碘化纳记录 【NaiRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    碘化纳记录 【NaiRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>DoseRate&nbsp;</td>
+    <td align='center'>伽马剂量率&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>xml&nbsp;</td>
+    <td align='center'>N42原数据&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>高压电离状态 【HveRunStatus】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    高压电离状态 【HveRunStatus】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>SystemStatus&nbsp;</td>
+    <td align='center'>系统状态&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>DatabaseStatus&nbsp;</td>
+    <td align='center'>数据库状态&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>ExternalPower&nbsp;</td>
+    <td align='center'>外部电源&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>DoseRateHighAlarm&nbsp;</td>
+    <td align='center'>剂量率过高警报&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>DoseRateLowAlarm&nbsp;</td>
+    <td align='center'>剂量率过低警报&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>HighVoltageHigh&nbsp;</td>
+    <td align='center'>高电压过高&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>HighVoltageLow&nbsp;</td>
+    <td align='center'>高电压过低&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>BatteryVoltageHigh&nbsp;</td>
+    <td align='center'>电池电压过高&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>BatteryVoltageLow&nbsp;</td>
+    <td align='center'>电池电压过低&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>HighChargingCurrent&nbsp;</td>
+    <td align='center'>充电电流过高&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>HighBatteryDischarge&nbsp;</td>
+    <td align='center'>电池放电过快&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>HighBatteryTemperature&nbsp;</td>
+    <td align='center'>电池温度过高&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>BatteryCapacityAlarm&nbsp;</td>
+    <td align='center'>电池容量报警&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>DatabaseSizeWarning&nbsp;</td>
+    <td align='center'>数据库大小报警&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>DoseRateHighAlarmValue&nbsp;</td>
+    <td align='center'>剂量率过高警报值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>DoseRateLowAlarmValue&nbsp;</td>
+    <td align='center'>剂量率过低警报值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>HighVoltageHighValue&nbsp;</td>
+    <td align='center'>高电压过高值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>HighVoltageLowValue&nbsp;</td>
+    <td align='center'>高电压过低值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>BatteryVoltageHighValue&nbsp;</td>
+    <td align='center'>电池电压过高值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>BatteryVoltageLowValue&nbsp;</td>
+    <td align='center'>电池电压过低值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>RunUpdateTime&nbsp;</td>
+    <td align='center'>状态更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>25&nbsp;</td>
+    <td  align='center'>AlarmUpdateTime&nbsp;</td>
+    <td align='center'>警报更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>26&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>高压电离伽马记录 【HveRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    高压电离伽马记录 【HveRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>DoseRate&nbsp;</td>
+    <td align='center'>伽马剂量率&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>HighVoltage&nbsp;</td>
+    <td align='center'>高电压&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>ElectrometerTemperature&nbsp;</td>
+    <td align='center'>静电计温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>BatteryVoltage&nbsp;</td>
+    <td align='center'>电池电压&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>高压电离记录 【HveExtRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    高压电离记录 【HveExtRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>IntegratorTemperature&nbsp;</td>
+    <td align='center'>集成温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>ElectrometerHumidity&nbsp;</td>
+    <td align='center'>静电计湿度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>BatteryCurrent&nbsp;</td>
+    <td align='center'>电池电流&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>BatteryTemperature&nbsp;</td>
+    <td align='center'>电池温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>RemainingBatteryCapacity&nbsp;</td>
+    <td align='center'>剩余电池容量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>FullChargeBatteryCapacity&nbsp;</td>
+    <td align='center'>完全充电电池容量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>PercentBatteryCapacity&nbsp;</td>
+    <td align='center'>电池容量百分比&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Uptime&nbsp;</td>
+    <td align='center'>正常运行时间&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>湿沉降降雨记录 【ZjcRainRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    湿沉降降雨记录 【ZjcRainRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>StartTime&nbsp;</td>
+    <td align='center'>降雨开始时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>EndTime&nbsp;</td>
+    <td align='center'>降雨结束时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>Rainfall&nbsp;</td>
+    <td align='center'>降雨量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>Intensity&nbsp;</td>
+    <td align='center'>降雨强度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>干沉降记录 【ZjcRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    干沉降记录 【ZjcRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>StartTime&nbsp;</td>
+    <td align='center'>干沉降起始日期&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>EndTime&nbsp;</td>
+    <td align='center'>干沉降结束日期&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>干湿沉降实时数据 【ZjcRunStatus】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    干湿沉降实时数据 【ZjcRunStatus】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>DryDepositionCount&nbsp;</td>
+    <td align='center'>干沉降总条数&nbsp;</td>
+    <td  align='center'>ushort&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>Status&nbsp;</td>
+    <td align='center'>当前仪器状态&nbsp;</td>
+    <td  align='center'>ushort&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>InstrumentTime&nbsp;</td>
+    <td align='center'>设备实时时钟&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>RainfallYesterday&nbsp;</td>
+    <td align='center'>前一天降雨总量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>RainfallCurrent&nbsp;</td>
+    <td align='center'>当前逢雨雨量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>环境温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Humidity&nbsp;</td>
+    <td align='center'>湿度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>TempOfBox&nbsp;</td>
+    <td align='center'>机箱温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>TempOfBucket&nbsp;</td>
+    <td align='center'>采样桶温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>TempOfRainSensor&nbsp;</td>
+    <td align='center'>雨感器温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>Raintimes&nbsp;</td>
+    <td align='center'>查询日期内降雨总时间&nbsp;</td>
+    <td  align='center'>ushort&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>FilledWater&nbsp;</td>
+    <td align='center'>集雨桶水满&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>AlarmLidOpenedOver&nbsp;</td>
+    <td align='center'>开盖超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>AlarmLidClosedOver&nbsp;</td>
+    <td align='center'>关盖超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>AlarmBoxTemp&nbsp;</td>
+    <td align='center'>机箱温控故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>AlarmBucketTemp&nbsp;</td>
+    <td align='center'>采样桶温控故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>AlarmRainSensor&nbsp;</td>
+    <td align='center'>感雨器温控故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>AlarmDryBucketFilled&nbsp;</td>
+    <td align='center'>干沉降桶液位满故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>AlarmDryBucketWaterLess&nbsp;</td>
+    <td align='center'>干沉降桶液位低故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>AlarmJyqFilled&nbsp;</td>
+    <td align='center'>集雨器水满故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>AlarmTemperature&nbsp;</td>
+    <td align='center'>环境温度故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>RunUpdateTime&nbsp;</td>
+    <td align='center'>状态更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>25&nbsp;</td>
+    <td  align='center'>AlarmUpdateTime&nbsp;</td>
+    <td align='center'>警报更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>26&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>设备日志 【IotDeviceLog】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    设备日志 【IotDeviceLog】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>LogType&nbsp;</td>
+    <td align='center'>类别&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>Level&nbsp;</td>
+    <td align='center'>级别&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Text&nbsp;</td>
+    <td align='center'>消息&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Act&nbsp;</td>
+    <td align='center'>动作&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Data&nbsp;</td>
+    <td align='center'>参数&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>设备报警记录 【IotDeviceAlarm】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    设备报警记录 【IotDeviceAlarm】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>LogType&nbsp;</td>
+    <td align='center'>类别&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>Level&nbsp;</td>
+    <td align='center'>级别&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Text&nbsp;</td>
+    <td align='center'>消息&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Prop&nbsp;</td>
+    <td align='center'>属性或部件&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Data&nbsp;</td>
+    <td align='center'>参数&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>Notify&nbsp;</td>
+    <td align='center'>通知&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>Restore&nbsp;</td>
+    <td align='center'>恢复或处理结果&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>UpdateTime&nbsp;</td>
+    <td align='center'>恢复或处理时间&nbsp;</td>
+    <td  align='center'>datetime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>DLL检测记录 【DllRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    DLL检测记录 【DllRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>Act&nbsp;</td>
+    <td align='center'>命令动作&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>RecordTime&nbsp;</td>
+    <td align='center'>记录时间&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>BatchNumber&nbsp;</td>
+    <td align='center'>采样模批号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>IsEmpty&nbsp;</td>
+    <td align='center'>是否空白值&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>在没接近样品的空白条件下测量结果,做为后续记录的参考&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>alpha&nbsp;</td>
+    <td align='center'>alpha&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>beta0&nbsp;</td>
+    <td align='center'>beta0&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>直接测到值=beta+gamma&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>beta2&nbsp;</td>
+    <td align='center'>beta2&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>即常说的gamma&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>beta&nbsp;</td>
+    <td align='center'>beta&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>可用beta0-beta2得到&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>ratio&nbsp;</td>
+    <td align='center'>β/α比率&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>由下位机计算并优化过&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>rawData&nbsp;</td>
+    <td align='center'>原始数据&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>原始数据的二维数组,反应当时测到的多组原始数据,顺序固定为alpha,beta0,beta2&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>AQI&nbsp;</td>
+    <td align='center'>空气质量指数&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>Fluoride&nbsp;</td>
+    <td align='center'>氟化物浓度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>Item1&nbsp;</td>
+    <td align='center'>污染物1&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>Item2&nbsp;</td>
+    <td align='center'>污染物2&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>Humidity&nbsp;</td>
+    <td align='center'>湿度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>Atmosphere&nbsp;</td>
+    <td align='center'>气压&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>WindSpeed&nbsp;</td>
+    <td align='center'>风速 &nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>WindDirection&nbsp;</td>
+    <td align='center'>风向&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>WaterRequire&nbsp;</td>
+    <td align='center'>雨量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>DLL设备参数信息 【DllSetting】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    DLL设备参数信息 【DllSetting】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>Act&nbsp;</td>
+    <td align='center'>命令动作&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>GeoLocation_Lng&nbsp;</td>
+    <td align='center'>地理位置-经度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>GeoLocation_Lat&nbsp;</td>
+    <td align='center'>地理位置-伟度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Runtime&nbsp;</td>
+    <td align='center'>累计运行时间 &nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>WorkMode&nbsp;</td>
+    <td align='center'>工作模式&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>SettingFlow&nbsp;</td>
+    <td align='center'>设定流量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>SampleCount&nbsp;</td>
+    <td align='center'>采样次数&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>SampleTime&nbsp;</td>
+    <td align='center'>采样时间&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>SampleTimespan&nbsp;</td>
+    <td align='center'>采样间隔&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>SampleTotalVolume&nbsp;</td>
+    <td align='center'>采样总量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>TestTimespan&nbsp;</td>
+    <td align='center'>测量间隔时间&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>ExtraTime&nbsp;</td>
+    <td align='center'>采样结束后测量时间&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>TestRecordCount&nbsp;</td>
+    <td align='center'>测量读数次数&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>TestRecordTimespan&nbsp;</td>
+    <td align='center'>测量读数间隔&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>MaxRatio&nbsp;</td>
+    <td align='center'>β/α最大预警值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>alphaAdd&nbsp;</td>
+    <td align='center'>修正系数alpha&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>betaAdd&nbsp;</td>
+    <td align='center'>修正系数beta&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>TestAndSampling&nbsp;</td>
+    <td align='center'>测量时是否采样&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>TaskStartTime&nbsp;</td>
+    <td align='center'>任务启动时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>RSSI&nbsp;</td>
+    <td align='center'>接收信号强度 &nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>BatchNumber&nbsp;</td>
+    <td align='center'>采样模批号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>25&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>气象数据 【AtmosphereRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    气象数据 【AtmosphereRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>GeoLocation_Lng&nbsp;</td>
+    <td align='center'>地理位置-经度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>GeoLocation_Lat&nbsp;</td>
+    <td align='center'>地理位置-伟度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>大气温度(℃)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>A01001&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Humidity&nbsp;</td>
+    <td align='center'>大气湿度(%RH)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>A01002&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Atmosphere&nbsp;</td>
+    <td align='center'>大气气压(hpa)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>A01006&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>WindSpeed&nbsp;</td>
+    <td align='center'>风速(m/s)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>A01007&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>WindDirection&nbsp;</td>
+    <td align='center'>风向(°)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>A01008&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Noise&nbsp;</td>
+    <td align='center'>噪声(dB)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>B03&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>CO&nbsp;</td>
+    <td align='center'>CO (μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>SO2&nbsp;</td>
+    <td align='center'>SO2(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>O3&nbsp;</td>
+    <td align='center'>O3(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>O3_Avg8H&nbsp;</td>
+    <td align='center'>O3_滚动8小平均(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>NO2&nbsp;</td>
+    <td align='center'>NO2(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>VOC&nbsp;</td>
+    <td align='center'>TVOC(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>PM10&nbsp;</td>
+    <td align='center'>PM10(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>PM2_5&nbsp;</td>
+    <td align='center'>PM2.5(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>NH3&nbsp;</td>
+    <td align='center'>NH3(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>HCL&nbsp;</td>
+    <td align='center'>HCL (μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>CL2&nbsp;</td>
+    <td align='center'>CL2(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>C2H4O2&nbsp;</td>
+    <td align='center'>C2H4O2(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>C6H6&nbsp;</td>
+    <td align='center'>C6H6(μg/m3)&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>25&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>气碘运行状态 【ZcqRunStatus】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    气碘运行状态 【ZcqRunStatus】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>WorkMode&nbsp;</td>
+    <td align='center'>工作模式&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>WorkStatus&nbsp;</td>
+    <td align='center'>设备状态&nbsp;</td>
+    <td  align='center'>ushort&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>WorkStatusName&nbsp;</td>
+    <td align='center'>设备状态描述&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>StandardVolume&nbsp;</td>
+    <td align='center'>标况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>WorkingVolume&nbsp;</td>
+    <td align='center'>工况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>IsDoorOpened&nbsp;</td>
+    <td align='center'>舱门是否打开&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>LCDStatus&nbsp;</td>
+    <td align='center'>LCD连接状态&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>IsPressureAOverrun&nbsp;</td>
+    <td align='center'>大气A是否超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>IsPressureBOverrun&nbsp;</td>
+    <td align='center'>大气B是否超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>IsIodineOverrun&nbsp;</td>
+    <td align='center'>气碘是否超限&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>FS4003AError&nbsp;</td>
+    <td align='center'>A电子流量计FS4003故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>FS4003BError&nbsp;</td>
+    <td align='center'>B电子流量计FS4003故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>DpSensorError&nbsp;</td>
+    <td align='center'>差压传感器故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>AtmosphereModuleError&nbsp;</td>
+    <td align='center'>大气压模块故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>TemModuleError&nbsp;</td>
+    <td align='center'>温度模块故障&nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>SettingFlow&nbsp;</td>
+    <td align='center'>瞬时采样流量设定值&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>SettingHour&nbsp;</td>
+    <td align='center'>已设定的采样时间的小时部分值&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>SettingMin&nbsp;</td>
+    <td align='center'>已设定的采样时间的分钟部分值&nbsp;</td>
+    <td  align='center'>short&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>SettingTotalFlow&nbsp;</td>
+    <td align='center'>已设定的采样体积值&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>TaskStartTime&nbsp;</td>
+    <td align='center'>任务启动时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>RunUpdateTime&nbsp;</td>
+    <td align='center'>状态更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>24&nbsp;</td>
+    <td  align='center'>AlarmUpdateTime&nbsp;</td>
+    <td align='center'>警报更新时间&nbsp;</td>
+    <td  align='center'>DateTime?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>25&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>气碘采样记录 【ZcqRecord】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    气碘采样记录 【ZcqRecord】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>DeviceId&nbsp;</td>
+    <td align='center'>设备Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>FileNo&nbsp;</td>
+    <td align='center'>文件号&nbsp;</td>
+    <td  align='center'>int&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>BatchNumber&nbsp;</td>
+    <td align='center'>滤膜批号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>StartTime&nbsp;</td>
+    <td align='center'>开始时间&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>EndTime&nbsp;</td>
+    <td align='center'>结束时间&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>InstantaneousFlow&nbsp;</td>
+    <td align='center'>瞬时流量&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>StandardVolume&nbsp;</td>
+    <td align='center'>标况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>WorkingVolume&nbsp;</td>
+    <td align='center'>工况体积&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>Temperature&nbsp;</td>
+    <td align='center'>环境温度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>Humidity&nbsp;</td>
+    <td align='center'>环境湿度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Atmosphere&nbsp;</td>
+    <td align='center'>大气压&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>CreationTime&nbsp;</td>
+    <td align='center'>创建时间&nbsp;</td>
+    <td  align='center'>DateTime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>设备信息 【Device】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    设备信息 【Device】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>设备唯一标识，对应国标要求的MN编码规则&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>DeviceRoomId&nbsp;</td>
+    <td align='center'>站房Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>CustomerId&nbsp;</td>
+    <td align='center'>客户Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>Name&nbsp;</td>
+    <td align='center'>设备友好名称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>MqttUserName&nbsp;</td>
+    <td align='center'>通讯用户名&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>MqttPassword&nbsp;</td>
+    <td align='center'>通讯密码&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>SN&nbsp;</td>
+    <td align='center'>设备通讯序列号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>一般用DTU网卡号,没有的用MN号，要唯一&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>ProductName&nbsp;</td>
+    <td align='center'>设备名称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>ProductModel&nbsp;</td>
+    <td align='center'>设备型号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>ManufactureDate&nbsp;</td>
+    <td align='center'>出厂日期&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Sales&nbsp;</td>
+    <td align='center'>销售代表&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>CustomerService&nbsp;</td>
+    <td align='center'>售后客服&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>GeoLocation_Lng&nbsp;</td>
+    <td align='center'>地理位置-经度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>GeoLocation_Lat&nbsp;</td>
+    <td align='center'>地理位置-伟度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>GeoLocation_Altitude&nbsp;</td>
+    <td align='center'>地理位置-海拔高度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>TestAddress&nbsp;</td>
+    <td align='center'>部署地址&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>HWConnectionJson&nbsp;</td>
+    <td align='center'>硬件连接参数&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>IsEnable&nbsp;</td>
+    <td align='center'>有效状态 &nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>Remark&nbsp;</td>
+    <td align='center'>备注&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>LastTimeOnline&nbsp;</td>
+    <td align='center'>最后上线时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>LastTimeOffline&nbsp;</td>
+    <td align='center'>最后掉线时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>站房信息 【DeviceRoom】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    站房信息 【DeviceRoom】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>long&nbsp;</td>
+    <td>设备唯一标识，对应国标要求的MN编码规则&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>Name&nbsp;</td>
+    <td align='center'>名称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>ShortName&nbsp;</td>
+    <td align='center'>简称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>CustomerId&nbsp;</td>
+    <td align='center'>客户Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>MqttUserName&nbsp;</td>
+    <td align='center'>通讯用户名&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>MqttPassword&nbsp;</td>
+    <td align='center'>通讯密码&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>SN&nbsp;</td>
+    <td align='center'>序列号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>使用mac&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Mac&nbsp;</td>
+    <td align='center'>网卡MAC&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>ProductModel&nbsp;</td>
+    <td align='center'>设备型号&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>ManufactureDate&nbsp;</td>
+    <td align='center'>出厂日期&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>SetupDate&nbsp;</td>
+    <td align='center'>安装日期&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>GeoLocation_Lng&nbsp;</td>
+    <td align='center'>地理位置-经度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>13&nbsp;</td>
+    <td  align='center'>GeoLocation_Lat&nbsp;</td>
+    <td align='center'>地理位置-伟度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>14&nbsp;</td>
+    <td  align='center'>GeoLocation_Altitude&nbsp;</td>
+    <td align='center'>地理位置-海拔高度&nbsp;</td>
+    <td  align='center'>decimal&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>15&nbsp;</td>
+    <td  align='center'>TestAddress&nbsp;</td>
+    <td align='center'>部署地址&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>16&nbsp;</td>
+    <td  align='center'>LastMaintainDate&nbsp;</td>
+    <td align='center'>最后保养日期&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>17&nbsp;</td>
+    <td  align='center'>NextMaintainDate&nbsp;</td>
+    <td align='center'>下次保养日期&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>18&nbsp;</td>
+    <td  align='center'>HWConnectionJson&nbsp;</td>
+    <td align='center'>硬件连接参数&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>19&nbsp;</td>
+    <td  align='center'>IsEnable&nbsp;</td>
+    <td align='center'>有效状态 &nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>20&nbsp;</td>
+    <td  align='center'>Remark&nbsp;</td>
+    <td align='center'>备注&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>21&nbsp;</td>
+    <td  align='center'>LastTimeOnline&nbsp;</td>
+    <td align='center'>最后上线时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>22&nbsp;</td>
+    <td  align='center'>LastTimeOffline&nbsp;</td>
+    <td align='center'>最后掉线时间&nbsp;</td>
+    <td  align='center'>datetime&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>23&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>客户信息 【Customer】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    客户信息 【Customer】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>Name&nbsp;</td>
+    <td align='center'>名称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>Sales&nbsp;</td>
+    <td align='center'>销售代表&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>CustomerService&nbsp;</td>
+    <td align='center'>售后客服&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>IsEnable&nbsp;</td>
+    <td align='center'>有效状态 &nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Company&nbsp;</td>
+    <td align='center'>公司&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Contact&nbsp;</td>
+    <td align='center'>客户联系人&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Mobile&nbsp;</td>
+    <td align='center'>联系手机&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>Email&nbsp;</td>
+    <td align='center'>联系邮箱&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>Address&nbsp;</td>
+    <td align='center'>联系地址&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>11&nbsp;</td>
+    <td  align='center'>Remark&nbsp;</td>
+    <td align='center'>备注&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>12&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<style type='text/css'> 
+table 
+{ 
+border-collapse: collapse; 
+border-spacing:0;
+border: solid #ccc 1px; 
+} 
+td 
+{ 
+border: solid #ccc 1px; 
+text-align:center;
+} 
+tr.tr2 
+{ 
+ background-color:#9BBB59; color:white; 
+} 
+tr.tr1 
+{ 
+ background-color:#fff; color:blak;
+} 
+tr.tr0 
+{ 
+ background-color:#eee; color:blak;
+} 
+</style> 
+
+
+<h6>工程师信息 【CustomerService】数据实体属性</h6>
+
+		<table width='90%' align='center'>
+  <tr>
+    <th colspan='5' scope='col' style=' background-color:green; color:white;'>
+    工程师信息 【CustomerService】数据实体属性
+    &nbsp;</th>
+  </tr>
+
+  <tr style=' background-color:#9BBB59; color:white;'>
+    <td  align='center'>序号&nbsp;</td>
+    <td  align='center'>属性&nbsp;</td>
+    <td  align='center'>含义&nbsp;</td>
+    <td  align='center'>类型&nbsp;</td>
+    <td  align='center'>备注&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>1&nbsp;</td>
+    <td  align='center'>Id&nbsp;</td>
+    <td align='center'>Id&nbsp;</td>
+    <td  align='center'>Guid&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>2&nbsp;</td>
+    <td  align='center'>Name&nbsp;</td>
+    <td align='center'>名称&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>3&nbsp;</td>
+    <td  align='center'>Company&nbsp;</td>
+    <td align='center'>公司&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>4&nbsp;</td>
+    <td  align='center'>IsEnable&nbsp;</td>
+    <td align='center'>有效状态 &nbsp;</td>
+    <td  align='center'>bool&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>5&nbsp;</td>
+    <td  align='center'>Contact&nbsp;</td>
+    <td align='center'>联系人&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>6&nbsp;</td>
+    <td  align='center'>Mobile&nbsp;</td>
+    <td align='center'>联系手机&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>7&nbsp;</td>
+    <td  align='center'>Email&nbsp;</td>
+    <td align='center'>联系邮箱&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>8&nbsp;</td>
+    <td  align='center'>Address&nbsp;</td>
+    <td align='center'>联系地址&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr1'>
+    <td  align='center'>9&nbsp;</td>
+    <td  align='center'>Remark&nbsp;</td>
+    <td align='center'>备注&nbsp;</td>
+    <td  align='center'>string&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr class='tr0'>
+    <td  align='center'>10&nbsp;</td>
+    <td  align='center'>TenantId&nbsp;</td>
+    <td align='center'>多租户&nbsp;</td>
+    <td  align='center'>Guid?&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>

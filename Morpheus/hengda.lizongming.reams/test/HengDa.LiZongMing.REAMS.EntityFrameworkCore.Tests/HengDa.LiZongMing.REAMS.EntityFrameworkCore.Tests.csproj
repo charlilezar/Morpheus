@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>HengDa.LiZongMing.REAMS</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations\HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations.csproj" />
+    <ProjectReference Include="..\HengDa.LiZongMing.REAMS.TestBase\HengDa.LiZongMing.REAMS.TestBase.csproj" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+  </ItemGroup>
+
+</Project>

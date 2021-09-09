@@ -1,0 +1,47 @@
+﻿{
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "Microsoft": "Warning",
+        "System": "Warning",
+        "Microsoft.EntityFrameworkCore": "Verbose"
+      }
+    },
+    "LevelSwitches": {
+      "$Verbose": "Verbose"
+    },
+    "WriteTo": [
+      {
+        "Name": "Console"
+      },
+      {
+        "Name": "Async",
+        "Args": {
+          "configure": [
+            {
+              "Name": "File",
+              "Args": {
+                "path": "Logs/logs.txt",
+                "rollingInterval": "Day"
+                //"outputTemplate": "{Timestamp:o} [{Level:u3}] ({Application}/{MachineName}/{ThreadId}) {Message}{NewLine}{Exception}"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Udp",
+        "Args": {
+          "remoteAddress": "127.0.0.1",
+          "remotePort": 7071,
+          "family": "InterNetwork",
+          "formatter": "Serilog.Sinks.Udp.TextFormatters.Log4jTextFormatter, Serilog.Sinks.Udp",
+          "localPort": 0,
+          "restrictedToMinimumLevel": "Verbose",
+          "levelSwitch": "$Verbose"
+        }
+      }
+    ]
+  }
+}

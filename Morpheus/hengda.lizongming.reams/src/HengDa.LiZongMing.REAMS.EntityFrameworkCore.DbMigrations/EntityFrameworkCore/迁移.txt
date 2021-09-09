@@ -1,0 +1,29 @@
+﻿
+vs 2017 版以上 迁移命令
+
+
+# 启用数据迁移
+Enable-Migrations -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore 
+
+
+# 生成数据库差异结构,其中db是版本名不要一样
+Add-Migration -Name  "Init"  -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.Web  -Verbose
+Add-Migration -Name  "IdentityServerInit"  -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.Web  -Verbose
+Add-Migration -Name  "ZCQ"  -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.DbMigrator  -Verbose
+Add-Migration -Name  "HVE"  -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.DbMigrator  -Verbose
+Add-Migration -Name  "Room"  -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.DbMigrator  -Verbose
+
+
+# 生成迁移脚本
+Script-Migration  -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.Web  -Verbose
+
+
+# 创建或更新到数据库  请运行 HengDa.LiZongMing.REAMS.DbMigrator
+Update-Database -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.Web -Verbose
+
+#还原
+Update-Database  "IdentityServerInit"   -Project HengDa.LiZongMing.REAMS.EntityFrameworkCore.DbMigrations -StartUp HengDa.LiZongMing.REAMS.Web  -Verbose
+--还原到空白状态
+ 
+Update-Database   0  -Context IotManageDbContext -Project Aming.IotManage.Web -StartUp Aming.TaskManager.Web
+

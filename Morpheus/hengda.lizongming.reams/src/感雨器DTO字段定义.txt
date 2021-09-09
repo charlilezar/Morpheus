@@ -1,0 +1,6 @@
+#感雨器时数据,RNSRealDataDto
+设备序号,MacNo,short
+是否下雨,Raining,bool
+感雨器温度,RNSTemp,decimal
+雨量,RNSRainfall,decimal
+

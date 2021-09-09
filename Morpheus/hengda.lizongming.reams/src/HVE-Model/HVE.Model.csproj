@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>HengDa.LiZongMing.REAMS</RootNamespace>
+    <AssemblyName>HVE.Model</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MvvmMessages\**" />
+    <EmbeddedResource Remove="MvvmMessages\**" />
+    <None Remove="MvvmMessages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataService\SentryDataService-old.cs" />
+    <Compile Remove="DataService\UdpDiscoveryClient.cs" />
+    <Compile Remove="Notifications\UdpNotifyInput-old.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="app.xaml" />
+    <None Remove="NLog.config" />
+    <None Remove="NLog.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CommonLibrary">
+      <HintPath>CommonLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Notifications\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="5.0.1" />
+  </ItemGroup>
+
+
+
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helper\CalCheckCode.cs" />
+    <Compile Remove="Helper\CommandExecResult.cs" />
+    <Compile Remove="Helper\CommMethod.cs" />
+    <Compile Remove="Helper\ConvertHelper.cs" />
+    <Compile Remove="Helper\LoggerService.cs" />
+  </ItemGroup>
+
+</Project>

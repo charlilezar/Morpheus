@@ -1,0 +1,16 @@
+#实时数据
+累计降雨量
+上一场降雨量
+本场降雨量
+
+~~以上数据一次性将寄存器地址都读取出来；
+
+
+Raining
+#降雨状态,RNSRunStatus
+设备Id,DeviceId,long,0,True,0,1,,,,,模型/DTO/编辑/列表/添加/搜索,0
+下雨中,Raining
+下雨开始时间,BeginTime,DateTime?
+下雨结束时间,EndTime,DateTime?
+累计降雨量,TotalRainfall,int
+每分钟降雨量,MinRainfall,int
